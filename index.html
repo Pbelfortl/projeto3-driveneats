@@ -94,7 +94,15 @@
             </div>
         </div>
         <div class="bottomBox">
-            <button class="request" onclick="request()">Selecione os 3 itens para fechar o pedido</button>
+            <button class="request" onclick="confirmScreen()">Selecione os 3 itens para fechar o pedido</button>
+        </div>
+        <div class="confirm">
+            <div class="confirmInfo">
+                <div class="confirmTittle">Confirme seu pedido</div>
+                <div class="requestInfo"></div>
+                <button class="confirmButton" onclick="request()">Tudo certo, pode pedir!</button>
+                <button class="closeButton" onclick="confirmScreen()">Cancelar</button>
+            </div>
         </div>
     </div>
 

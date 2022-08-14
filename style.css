@@ -11,6 +11,8 @@ body {
     height: auto;
     display: flex;
     justify-content: center;
+    position: relative;
+    align-items: center;
     
 }
 
@@ -25,6 +27,7 @@ body {
     width: 414px;
     height: auto;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     background-color: #eeee;
 }
@@ -34,7 +37,7 @@ body {
     top: 0;
     left: 0;
     background-color: #CF2B2B;
-    width: 414px;
+    width: auto;
     height: 92px;
     display: flex;
     flex-direction: column;
@@ -158,6 +161,10 @@ body {
     color: white;
 }
 
+.greenRequest, .closeButton, .confirmButton:hover {
+    cursor: pointer;
+}
+
 .checkBoxMain, .checkBoxDrink, .checkBoxDessert {
     width: 15px;
     height: 15px;
@@ -168,4 +175,74 @@ body {
 
 .checkedMain, .checkedDrink, .checkedDessert {
     display:initial;
+}
+
+.confirm {
+    width: 414px;
+    height: 1026px;
+    background-color: rgba(255, 255, 255, 0.658);
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    display: none;
+}
+
+.showConfirm {
+    display: flex;
+}
+
+.confirmInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 377px;
+    height: 353px;
+    background-color: #32B72F;
+    color: white;
+    border-radius: 9px;
+    margin-bottom: 300px;
+}
+
+.requestInfo {
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align:justify;
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.confirmTittle {
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.confirmButton {
+    width: 329px;
+    height: 52px;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    color: #32B72F;
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.closeButton {
+    height: 52px;
+    width: 180px;
+    color: white;
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+    background-color: #32B72F;
 }

@@ -80,6 +80,32 @@ function buyButton () {
     }
 }
 
+function confirmScreen () {
+
+    let main = document.querySelector('.main .chosenDish .dishName')
+    let drink = document.querySelector('.drink .chosenDish .dishName')
+    let dessert = document.querySelector('.dessert .chosenDish .dishName')
+
+    let mainPrice = document.querySelector('.main .chosenDish .price')
+    let mainValue = Number( (mainPrice.innerHTML.replace(/\D/g,'')/100).toFixed(2) );
+    let drinkPrice = document.querySelector('.drink .chosenDish .price')
+    let drinkValue = Number((drinkPrice.innerHTML.replace(/\D/g,'')/100).toFixed(2));
+    let dessertPrice = document.querySelector('.dessert .chosenDish .price')
+    let dessertValue = Number((dessertPrice.innerHTML.replace(/\D/g,'')/100).toFixed(2));
+
+    let mainName = main.innerHTML
+    let drinkName = drink.innerHTML
+    let dessertName = dessert.innerHTML
+
+    let total = (mainValue + drinkValue + dessertValue).toFixed(2)
+
+    let requestInfo = document.querySelector('.requestInfo')
+    requestInfo.innerHTML = `${mainName} ${mainValue} <br><br> ${drinkName} ${drinkValue} <br><br> ${dessertName} ${dessertValue} <br><br> <strong>Total: R$${total}</strong>`
+
+    const remove =  document.querySelector('.confirm')
+    remove.classList.toggle('showConfirm')
+}
+
 function request () {
     if (counter === 3) {
         let main = document.querySelector('.main .chosenDish .dishName')
@@ -106,80 +132,3 @@ function request () {
         window.open(whatsURL)
     }
 }
-
-/*
-function chooseDrink (dish) {
-    
-    let pick = document.querySelector('.drink .chosenDish');
-
-    if (pick !== null){
-        pick.classList.remove("chosenDish");
-    }
-
-    dish.classList.toggle('chosenDish', '.checked');
-
-}
-
-function chooseDessert (dish) {
-    
-    let pick = document.querySelector('.dessert .chosenDish');
-
-    if (pick !== null){
-        pick.classList.remove("chosenDish");
-    }
-
-    dish.classList.toggle('chosenDish');
-
-}
-
-/*
-
-function chooseMain (chosen) {
-
-
-    const pick = document.querySelector('.main .chosenDish');
-
-    if (pick !== null) {
-        pick.classList.remove("chosenDish")
-    }
-
-    seletor = '.'+chosen
-    const chosendish = document.querySelector(chosen);
-
-
-    chosendish.classList.toggle("chosenDish");
-}
-
-
-function chooseDrink (chosen) {
-  
-    
-
-    const pick = document.querySelector('.drink .chosenDish');
-    
-
-    if (pick !== null) {
-        pick.classList.remove("chosenDish")
-    }
-
-    const chosendish = this;
-
-
-    chosendish.classList.toggle("chosenDish");
-    console.log(chosendish)
-}
-function chooseDessert (chosen) {
-
-
-    const pick = document.querySelector('.dessert .chosenDish');
-
-    if (pick !== null) {
-        pick.classList.remove("chosenDish")
-    }
-
-    const chosendish = document.querySelector(chosen);
-
-
-    chosendish.classList.toggle("chosenDish");
-}
-*/
