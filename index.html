@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="topBar">
+            <div class="restaurant">DrivenEats</div>
+            <div class="subTittle">Sua comida em 6 minutos</div>
+        </div>
+        <div class="food">
+            <div class="tittle">Primeiro, seu prato</div>
+            <div class="main">
+                <div class="dish" onclick="chooseMain(this)">
+                    <img class="image" src="imgs/frango_yin_yang 1.png">
+                    <div class="dishName">Frango Yin Yang</div>
+                    <div class="info">Um pouco de batata, um pouco de salada</div>
+                    <div class="price">R$ 14,90 <img class="checkBoxMain" src="./imgs/Vector.png"></div>
+                    
+                </div>
+                <div class="dish" onclick="chooseMain(this)">
+                    <img class="image" src="imgs/nhoque.jpg">
+                    <div class="dishName">Nhoque de batata</div>
+                    <div class="info">Massa de batata com molho bolonhesa</div>
+                    <div class="price">R$ 16,50 <img class="checkBoxMain" src="./imgs/Vector.png"></div>
+                    
+                </div>
+                <div class="dish" onclick="chooseMain(this)">
+                    <img class="image" src="imgs/burrito.jpg">
+                    <div class="dishName">Burrito</div>
+                    <div class="info">Recheio de frango desfiado, bacon e guacamole</div>
+                    <div class="price">R$ 12,60 <img class="checkBoxMain" src="./imgs/Vector.png"></div>
+                </div>
+                <div class="dish" onclick="chooseMain(this)">
+                    <img class="image" src="imgs/lasanha.jpg">
+                    <div class="dishName">Lasanha</div>
+                    <div class="info">Lasanha à bolonhesa</div>
+                    <div class="price">R$ 15,20 <img class="checkBoxMain" src="./imgs/Vector.png"></div>
+                </div>
+            </div>
+            <div class="tittle">Agora, sua bebida</div>
+            <div class="drink">
+                <div class="dish" onclick="chooseDrink(this)">
+                    <img class="image" src="imgs/coquinha_gelada 1.png">
+                    <div class="dishName">Coca-Cola</div>
+                    <div class="info">Lata 350ml</div>
+                    <div class="price">R$ 5,00 <img class="checkBoxDrink" src="./imgs/Vector.png"></div>
+                </div>
+                <div class="dish" onclick="chooseDrink(this)">
+                    <img class="image" src="imgs/guaraná.jpg">
+                    <div class="dishName">Guaraná Antártica</div>
+                    <div class="info">Lata 350ml</div>
+                    <div class="price">R$ 5,00 <img class="checkBoxDrink" src="./imgs/Vector.png"></div>
+                </div>
+                <div class="dish" onclick="chooseDrink(this)">
+                    <img class="image" src="imgs/limo.jpg">
+                    <div class="dishName">H2O limoneto</div>
+                    <div class="info">Garrafa 500ml</div>
+                    <div class="price">R$ 4,50 <img class="checkBoxDrink" src="./imgs/Vector.png"></div>
+                </div>
+                <div class="dish" onclick="chooseDrink(this)">
+                    <img class="image" src="imgs/Suco.jpg">
+                    <div class="dishName">Suco de laranja</div>
+                    <div class="info">Copo 400ml</div>
+                    <div class="price">R$ 4,50 <img class="checkBoxDrink" src="./imgs/Vector.png"></div>
+                </div>
+            </div>
+            <div class="tittle">Por fim, sua sobremesa</div>
+            <div class="dessert">
+                <div class="dish" onclick="chooseDessert(this)">
+                    <img class="image" src="imgs/pudim 1.png">
+                    <div class="dishName">Pudim</div>
+                    <div class="info">Pudim de leite</div>
+                    <div class="price">R$ 5,90 <img class="checkBoxDessert" src="./imgs/Vector.png"></div>
+                </div>
+                <div class="dish" onclick="chooseDessert(this)">
+                    <img class="image" src="imgs/cheesecake.jpg">
+                    <div class="dishName">Cheesecake</div>
+                    <div class="info">Cheesecake Romeu & Julieta</div>
+                    <div class="price">R$ 8,70 <img class="checkBoxDessert" src="./imgs/Vector.png"></div>
+                </div>
+                <div class="dish" onclick="chooseDessert(this)">
+                    <img class="image" src="imgs/red-velvet.jpg">
+                    <div class="dishName">Torta red velvet</div>
+                    <div class="info">Recheio de cream cheese com cobertura de frutas vermelhas</div>
+                    <div class="price">R$ 9,90 <img class="checkBoxDessert" src="./imgs/Vector.png"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bottomBox">
+            <button class="request" onclick="request()">Selecione os 3 itens para fechar o pedido</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

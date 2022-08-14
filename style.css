@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.image {
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+}
+
+.container {
+    position: sticky;
+    width: 414px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #eeee;
+}
+
+.topBar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #CF2B2B;
+    width: 414px;
+    height: 92px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+    box-shadow: 0 3px 5px #d4d3d3  ;
+}
+
+.food {
+    display: flex;
+    flex-direction: column;
+}
+
+.dish{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 172px;
+    height: 216px;
+    margin: 16px 10px;
+    padding: 14px;
+    border-radius: 9px;
+    background-color: #ffff;
+    box-shadow: 0 0 6px #d4d3d3;
+}
+
+.dish:hover ,.chosenDish:hover {
+    cursor: pointer;
+}
+
+.chosenDish {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 172px;
+    height: 216px;
+    margin: 16px 10px;
+    padding: 11px;
+    border-radius: 9px;
+    background-color: #ffff;
+    box-shadow: 0 0 6px #d4d3d3;
+    border: solid 3px #32B72F;
+}
+
+.main, .dessert, .drink {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.restaurant {
+    font-family: 'righteous', regular;
+    font-size: 44px;
+    font-weight: 400;
+    color: white;
+}
+
+.subTittle {
+    font-family: 'roboto';
+    font-size: 18px;
+    color: white;
+}
+
+.tittle {
+    font-family: 'righteous';
+    font-weight: 400;
+    font-size: 26px;
+    margin-top: 20px;
+    margin-left: 12px;
+    padding-top: 10px;
+}
+
+.dishName {
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.info {
+    font-family: 'roboto';
+    font-weight: 300;
+    font-size: 14px;
+    color: #A6A6A6;
+}
+
+.price {
+    font-family: 'roboto';
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomBox {
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    width: 414px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    padding-top: 15px;
+}
+
+.request {
+    position: sticky;
+    width: 364px;
+    height: 61px;
+    border: none;
+    border-radius: 50px;
+    background-color: #CBCBCB;
+    color: white;
+    font-family: 'roboto';
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0 80px;
+}
+
+.greenRequest {
+    background-color: #32B72F;
+    color: white;
+}
+
+.checkBoxMain, .checkBoxDrink, .checkBoxDessert {
+    width: 15px;
+    height: 15px;
+    bottom: 5px;
+    right: 5px;
+    display: none;
+}
+
+.checkedMain, .checkedDrink, .checkedDessert {
+    display:initial;
+}
