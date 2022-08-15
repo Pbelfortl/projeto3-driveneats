@@ -204,16 +204,16 @@ body {
     color: white;
     border-radius: 9px;
     margin-bottom: 300px;
+    padding-top: 30px;
 }
 
 .requestInfo {
     display: flex;
     width: 300px;
     flex-direction: column;
+    align-items:center;
+    text-align-last: justify;
     justify-content: space-between;
-    align-items: center;
-    text-align:justify;
-    text-justify:distribute;
     font-family: 'roboto', sans-serif;
     font-weight: 400;
     font-size: 18px;
