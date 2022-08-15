@@ -123,7 +123,7 @@ function request () {
         let drinkName = drink.innerHTML
         let dessertName = dessert.innerHTML
 
-        let total = (mainValue + drinkValue + dessertValue)
+        let total = (mainValue + drinkValue + dessertValue).toFixed(2)
 
         let message = `Olá, gostaria de fazer o pedido: \n -${mainName} \n -${drinkName} \n -${dessertName} \n Total: R$${total}`
         let request = encodeURIComponent(message)
