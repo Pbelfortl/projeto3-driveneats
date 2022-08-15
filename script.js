@@ -131,4 +131,8 @@ function request () {
         
         window.open(whatsURL)
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ed3ecf726a2f3520dd02b95642f00be0113b6695
