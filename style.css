@@ -213,9 +213,12 @@ body {
     justify-content: space-between;
     align-items: center;
     text-align:justify;
+    text-justify:distribute;
     font-family: 'roboto', sans-serif;
     font-weight: 400;
     font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .confirmTittle {

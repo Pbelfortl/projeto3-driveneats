@@ -87,7 +87,7 @@ function confirmScreen () {
     let dessert = document.querySelector('.dessert .chosenDish .dishName')
 
     let mainPrice = document.querySelector('.main .chosenDish .price')
-    let mainValue = Number( (mainPrice.innerHTML.replace(/\D/g,'')/100).toFixed(2) );
+    let mainValue = Number((mainPrice.innerHTML.replace(/\D/g,'')/100).toFixed(2));
     let drinkPrice = document.querySelector('.drink .chosenDish .price')
     let drinkValue = Number((drinkPrice.innerHTML.replace(/\D/g,'')/100).toFixed(2));
     let dessertPrice = document.querySelector('.dessert .chosenDish .price')
@@ -132,4 +132,3 @@ function request () {
         window.open(whatsURL)
     }
 }
-
