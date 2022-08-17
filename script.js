@@ -100,7 +100,7 @@ function confirmScreen () {
     let total = (mainValue + drinkValue + dessertValue).toFixed(2)
 
     let requestInfo = document.querySelector('.requestInfo')
-    requestInfo.innerHTML = ` ${mainName} &emsp;&emsp;&emsp;&emsp; ${mainValue} <br><br> ${drinkName} &emsp;&emsp;&emsp;&emsp; ${drinkValue} <br><br> ${dessertName} &emsp;&emsp;&emsp;&emsp; ${dessertValue} <br><br> <strong>Total: &emsp;&emsp;&emsp;&emsp;&emsp; R$${total}</strong>`
+    requestInfo.innerHTML = ` ${mainName} &emsp;&emsp;&emsp;&emsp; ${mainValue.toFixed(2)} <br><br> ${drinkName} &emsp;&emsp;&emsp;&emsp; ${drinkValue.toFixed(2)} <br><br> ${dessertName} &emsp;&emsp;&emsp;&emsp; ${dessertValue.toFixed(2)} <br><br> <strong>Total: &emsp;&emsp;&emsp;&emsp;&emsp; R$${total}</strong>`
 
     const remove =  document.querySelector('.confirm')
     remove.classList.toggle('showConfirm')
